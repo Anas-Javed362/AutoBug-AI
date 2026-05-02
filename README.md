@@ -1,4 +1,4 @@
-# AutoBug AI 🐛🤖
+# AutoBug AI 
 
 **A multi-agent LLM-based system for automated log analysis and bug triage.**
 
@@ -6,7 +6,7 @@ AutoBug AI ingests raw system logs or error messages and produces a structured J
 
 ---
 
-## 📑 Table of Contents
+## Table of Contents
 1. [Architecture](#architecture)
 2. [Project Structure](#project-structure)
 3. [Installation](#installation)
@@ -18,7 +18,7 @@ AutoBug AI ingests raw system logs or error messages and produces a structured J
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 
 
 ┌─────────────────────────────────────────────────────────┐
@@ -63,14 +63,14 @@ AutoBug AI ingests raw system logs or error messages and produces a structured J
 
 ---
 
-### ⚙️ LLM Backend Strategy
+### LLM Backend Strategy
 
 - With `OPENAI_API_KEY` → Uses OpenAI API  
 - Without API key → Uses fallback heuristic mock (fully offline support)
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 
 AutoBugAI/
@@ -83,7 +83,7 @@ AutoBugAI/
 
 ---
 
-## ⚙️ Installation
+## Installation
 
 ```bash
 # Navigate to project
@@ -98,7 +98,7 @@ venv\Scripts\activate       # Windows
 
 # Install dependency
 pip install openai
-🚀 Running the Project
+ Running the Project
 Interactive Mode
 python main.py
 Run Sample Logs
@@ -109,7 +109,7 @@ Disable Evaluation
 python main.py --sample --no-eval
 Quiet Mode
 python main.py --sample --quiet
-📊 Example Input / Output
+Example Input / Output
 Input
 ERROR database connection failed
 CRITICAL memory usage 97%
@@ -120,7 +120,7 @@ Output (JSON)
   "severity": "Critical",
   "suggested_fix": "Increase pool size, optimize queries"
 }
-📈 Evaluation System
+Evaluation System
 Check	Weight	Requirement
 Fields present	0.25	All fields exist
 Severity valid	0.25	Must be valid category
@@ -129,6 +129,6 @@ Root & Fix length	0.25	≥ 20 chars
 
 Final Score = Passed Checks / 4
 
-🔧 Configuration
+Configuration
 Variable	Description
 OPENAI_API_KEY	Enables real LLM usage
