@@ -21,6 +21,12 @@ AutoBug AI ingests raw system logs or error messages and produces a structured J
 ## Architecture
 
 
+
+
+
+
+
+
 ┌─────────────────────────────────────────────────────────┐
 │ AutoBug AI Pipeline │
 │ │
@@ -48,6 +54,14 @@ AutoBug AI ingests raw system logs or error messages and produces a structured J
 │ │ Evaluator │ → Score (0–1) │
 │ └─────────────────────┘ │
 └─────────────────────────────────────────────────────────┘
+
+
+
+
+
+
+
+
 
 
 ---
