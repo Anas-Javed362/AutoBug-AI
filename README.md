@@ -239,3 +239,5 @@ The evaluator scores each generated report on 4 equally-weighted checks:
 - **Graceful degradation** — if any LLM call fails or returns garbage, agents fall back to safe defaults rather than crashing.
 - **Separation of concerns** — agents, evaluation, and CLI are in separate modules; `main.py` is purely orchestration.
 - **Type hints throughout** — all public functions are fully typed for clarity and IDE support.
+#   A u t o B u g - A I  
+ 
